@@ -1,0 +1,59 @@
+# SurRealSkills by surrealsmpofficial
+# Changes to this file take effect after /skills reload.
+
+progression:
+  # XP needed to advance from level 1 to level 2.
+  base-xp: 100
+  # Each level requires this much more XP than the previous level.
+  xp-per-level-increase: 50
+  # Hard cap prevents abusive or corrupted values from growing indefinitely.
+  max-total-xp-per-skill: 1000000000000
+
+
+oak-logs:
+  # Breaking this many naturally generated oak logs levels up Foraging.
+  logs-per-level: 20
+  # Minecraft XP levels awarded each time the oak-log goal is reached.
+  minecraft-xp-levels-reward: 5
+
+progress-display:
+  # Boss bar color: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE.
+  bossbar-color: PURPLE
+  # Hide the boss bar after 60 ticks (3 seconds) without more skill progress.
+  hide-after-ticks: 60
+  # The boss bar's fill shows progress; the title never displays a numeric count.
+  oak-bossbar: "&d&lForaging &8| &fLevel &d{level}"
+  oak-actionbar: "&dForaging &8| &fLevel &d{level}"
+  skill-bossbar: "&d&l{skill} &8| &fLevel &d{level}"
+  skill-actionbar: "&d{skill} &8| &fLevel &d{level}"
+  level-up-title: "&6&lLEVEL UP! &dForaging &8| &fLevel &d{level} &7| &f+{reward} XP levels"
+  level-up-actionbar: "&6&lLEVEL UP! &dForaging &8| &fLevel &d{level} &7| &f+{reward} XP levels"
+
+xp:
+  mining: 2
+  foraging: 3
+  farming: 2
+  fishing: 10
+  excavation: 2
+  enchanting-per-level: 5
+
+messages:
+  prefix: "&5&lSurRealSkills &8» "
+  no-permission: "&cYou don't have permission to do that."
+  player-only: "&cOnly players can open the skills menu."
+  player-not-found: "&cThat player must be online."
+  invalid-skill: "&cUnknown skill. Use Mining, Foraging, Farming, Fishing, Excavation or Enchanting."
+  reloaded: "&aConfiguration reloaded."
+  xp-gained: "&d+{xp} {skill} XP &8| &fLevel {level}"
+  level-up: "&6&lLEVEL UP! &fYour {skill} skill is now level &d{level}&f!"
+  stats-header: "&d&l{player}'s Skills"
+  stats-line: "&f{skill}: &dLevel {level} &8| &fTotal XP: &d{xp} &8| &fNext level: &d{needed} XP"
+  top-header: "&d&lTop {skill} Players"
+  top-entry: "&d#{rank} &f{player} &8- &dLevel {level} &7({xp} XP)"
+  top-empty: "&7No XP has been earned for this skill yet."
+  help:
+    - "&d&lSurRealSkills &7commands"
+    - "&f/skills &7- Open your skills menu"
+    - "&f/skills stats [player] &7- View skill statistics"
+    - "&f/skills top <skill> &7- View the top 10 for a skill"
+    - "&f/skills reload &7- Reload the configuration"

@@ -1,0 +1,20 @@
+name: SurRealSkills
+version: '1.0.0'
+main: com.surrealsmp.skills.SurRealSkills
+api-version: '1.21'
+author: surrealsmpofficial
+description: Skills, XP, levels and an inventory GUI for Paper and Purpur.
+
+commands:
+  skills:
+    description: Open your skills menu or manage skill progression.
+    usage: /skills [stats [player]|top <skill>|reload]
+    aliases: [skill, surrealskills]
+
+permissions:
+  surrealskills.use:
+    description: Open the skills menu and view skill statistics.
+    default: true
+  surrealskills.admin:
+    description: Reload SurRealSkills configuration.
+    default: op
